@@ -25,6 +25,7 @@ $(".btn").click(function() {
   checkAnswer(userClickedPattern.length - 1);
 });
 
+
 function checkAnswer(currentLevel) {
 
     if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
@@ -59,6 +60,7 @@ function nextSequence() {
   playSound(randomChosenColor);
 }
 
+
 function animatePress(currentColor) {
   $("#" + currentColor).addClass("pressed");
   setTimeout(function () {
@@ -66,10 +68,12 @@ function animatePress(currentColor) {
   }, 100);
 }
 
+
 function playSound(name) {
   var audio = new Audio("sounds/" + name + ".mp3");
   audio.play();
 }
+
 
 function startOver() {
   level = 0;
