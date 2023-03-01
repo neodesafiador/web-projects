@@ -22,7 +22,7 @@ $(".btn").click(function() {
   playSound(userChosenColor);
   animatePress(userChosenColor);
 
-  checkAnswer(userClickedPattern.length-1);
+  checkAnswer(userClickedPattern.length - 1);
 });
 
 function checkAnswer(currentLevel) {
@@ -38,7 +38,7 @@ function checkAnswer(currentLevel) {
       $("body").addClass("game-over");
       $("#level-title").text("Game Over, Press Any Key to Restart");
 
-      setTimeout(function () {
+      setTimeout(function() {
         $("body").removeClass("game-over");
       }, 200);
 
